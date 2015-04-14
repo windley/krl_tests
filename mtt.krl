@@ -28,7 +28,7 @@ ruleset mtt {
     }
   }
  
-  rule catch {
+  rule catch is inactive {
     select when explicit sung
     send_directive("caught sung") with song = event:attr("song")
   }
